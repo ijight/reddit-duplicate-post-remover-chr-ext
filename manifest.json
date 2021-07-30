@@ -1,7 +1,7 @@
 {
     "name": "Reddit Duplicate Post Remover",
-    "description": "Go to any reddit.com/user/* page and press the 'Check Posts' button.",
-    "version": "1.0",
+    "description": "Go to any reddit.com/user/* page and click in the margin to remove duplicate posts.",
+    "version": "0.0.0.1",
     "manifest_version": 3,
     "content_scripts": [
       {
@@ -12,10 +12,15 @@
     "permissions": ["storage", "activeTab", "scripting"],
     "action": {
         "default_popup": "popup.html",
-        "default_icon": {}
+        "default_icon": {
+          "16": "logo16.png",
+          "128": "logo128.png"
+        }
       },
-      "icons": {},
-     
+      "icons": {
+        "128": "logo128.png",
+        "16": "logo16.png"
+      },
       "options_page": "options.html"
 }
   
